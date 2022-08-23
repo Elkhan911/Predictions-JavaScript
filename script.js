@@ -16,20 +16,21 @@ const predictionsObj = {
   10: "предсказание 10",
 };
 
+let timerId;
+let counterTimer = 0;
+
 startBtn.addEventListener("click", function () {
   startBtn.classList.add("buttonOff");
 
   stopBtn.classList.remove("buttonOff");
   stopBtn.classList.add("buttonOn");
+
+  timerId = setInterval(function () {
+    timer.textContent = counterTimer++;
+  }, 500);
 });
 
 stopBtn.addEventListener("click", function () {
   text.textContent = "предсказание";
+  clearInterval(timerId);
 });
-let i = 0;
-
-setInterval(function () {
-  console.log(i++);
-}, 1000);
-
-setInterval(1000);
