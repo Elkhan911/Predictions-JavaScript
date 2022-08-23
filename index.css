@@ -1,29 +1,29 @@
 .task {
   margin: 100px auto;
+  padding: 100px;
   border: 1px solid black;
   width: 1200px;
 }
 
-#parent {
+#_parent {
   text-align: center;
 }
-#parent > * {
-  margin-bottom: 10px;
-}
 
-#timer {
+#_timer {
   font-size: 18px;
 }
-#text {
+
+#_text {
   font-size: 17px;
   font-style: italic;
 }
 
-button {
+.buttonOn {
   padding: 5px 10px;
   font-size: 15px;
   cursor: pointer;
 }
-button:not(.active) {
+
+.buttonOff {
   display: none;
 }
