@@ -17,7 +17,7 @@ const predictionsObj = {
 };
 
 let timerId;
-let counterTimer = 0;
+let counterTimer = 1;
 
 startBtn.addEventListener("click", function () {
   startBtn.classList.add("buttonOff");
@@ -27,10 +27,13 @@ startBtn.addEventListener("click", function () {
 
   timerId = setInterval(function () {
     timer.textContent = counterTimer++;
-  }, 500);
+    if (counterTimer > 11) {
+      counterTimer = 1;
+    }
+  }, 100);
 });
 
 stopBtn.addEventListener("click", function () {
-  text.textContent = "предсказание";
+  text.textContent = predictionsObj[Number(counterTimer) - 1];
   clearInterval(timerId);
 });
