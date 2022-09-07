@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="index.css" />
     <title>Предсказания</title>
   </head>
-  <body>
-    <section class="task">
-      <h2 class="task__heading">
-        Сейчас мы сделаем сайт, который будет выдавать предсказания. Пусть на
-        этом сайте будет кнопка, по нажатию на которую будет запускаться таймер,
-        который будет каждые 0.1 секунд выводить в в какой-нибудь див случайное
-        число от 1 до некоторого максимального. Под дивом пусть будет другая
-        кнопка, по нажатию на которую пользователь нашего сайта может остановить
-        таймер и зафиксировать некоторое число в диве. Это число будет номером
-        предсказания. После этого покажите пользователю предсказание с этим
-        номером, а все лишние кнопки уберите с экрана, чтобы пользователь не мог
-        получить еще одно предсказание. То есть на один заход на сайт - одно
-        предсказание.
-      </h2>
-      <div id="_parent">
-        <div id="_timer">?</div>
-        <p id="_textOfPredict"></p>
-        <button id="_startBtn" class="buttonOn">узнать свою судьбу</button>
-        <button id="_stopBtn" class="buttonOff">получить предсказание</button>
+  <body class="page">
+    <section class="content">
+      <h1 class="content__header">Предсказатель</h1>
+      <div class="predictions">
+        <p class="predictions__hint">
+          По клику на кнопку вы можете получить только одно предсказание в день
+        </p>
+        <div class="predictions__timer" id="_timer">?</div>
+        <p class="predictions__text" id="_textOfPredict"></p>
+        <button id="_startBtn" class="predictions__button">
+          узнать свою судьбу
+        </button>
+        <button
+          id="_stopBtn"
+          class="predictions__button predictions__button_off"
+        >
+          получить предсказание
+        </button>
       </div>
     </section>
 

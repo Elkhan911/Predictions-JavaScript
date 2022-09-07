@@ -1,36 +1,46 @@
-.task {
-  margin: 100px auto;
-  padding: 100px;
+.content {
   border: 1px solid black;
   width: 1200px;
-}
-
-.task__heading {
-  text-align: justify;
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 200px;
-  border: 1px solid black;
-}
-
-#_parent {
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
-#_timer {
-  font-size: 15px;
+.content__header {
+  border: 1px solid black;
+  font-size: 40px;
 }
 
-#_textOfPredict {
+.predictions {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.predictions__hint {
+  font-size: 20px;
+}
+
+.predictions__timer {
   font-size: 30px;
 }
 
-.buttonOn {
-  padding: 5px 10px;
-  font-size: 15px;
-  cursor: pointer;
+.predictions__text {
+  font-size: 30px;
 }
 
-.buttonOff {
+.predictions__button {
+  width: 200px;
+  height: 70px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.predictions__button_off {
   display: none;
+}
+
+.predictions__button:hover {
+  background-color: floralwhite;
 }
