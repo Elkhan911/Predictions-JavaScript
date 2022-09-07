@@ -21,11 +21,13 @@
 }
 
 .predictions__timer {
+  padding-top: 30px;
   font-size: 30px;
 }
 
 .predictions__text {
   font-size: 30px;
+  min-height: 35px;
 }
 
 .predictions__button {
